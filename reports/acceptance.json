@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-17T06:51:13.155225+00:00",
+  "python": "3.12.14",
+  "kind": "local simulated integration; not real desktop or model inference",
+  "results": [
+    {
+      "case": "complete_task",
+      "passed": true,
+      "evidence": {
+        "success": true,
+        "stop_reason": "done",
+        "steps": 3,
+        "latency_ms": 0.24979999579954892,
+        "backend": "simulated-text-desktop",
+        "adapter": "scripted",
+        "model_inference": false,
+        "api_tokens": 0,
+        "final_state": {
+          "settings_open": true,
+          "name": "Peyman"
+        }
+      }
+    },
+    {
+      "case": "false_completion",
+      "passed": true,
+      "stop": "unverified_done"
+    },
+    {
+      "case": "sanitization_reaches_backend",
+      "passed": true,
+      "stored": "abcd"
+    },
+    {
+      "case": "shell_disabled",
+      "passed": true,
+      "decision": "BLOCKED"
+    }
+  ],
+  "passed": true
+}
