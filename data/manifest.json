@@ -1,0 +1,8 @@
+{
+  "dataset": "Air Quality",
+  "author": "Saverio Vito",
+  "doi": "10.24432/C59K5F",
+  "source_url": "https://archive.ics.uci.edu/static/public/360/air%2Bquality.zip",
+  "sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
+  "bytes": 785065
+}
