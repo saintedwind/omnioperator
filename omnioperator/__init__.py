@@ -1,3 +1,2 @@
-# omnioperator/__init__.py
-"""OmniOperator: Open-source OS automation agent (ReAct loop + safety guardrails)."""
-__version__ = "0.1.0"
+"""Policy-checked action execution and workflow experiments."""
+__version__ = "0.2.0"
