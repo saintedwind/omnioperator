@@ -39,7 +39,7 @@ Raw CSV is excluded from the release because UCI's current license label and leg
 
 ## Design
 
-`Observation → adapter proposal → policy → normalized parameters → controller → environment → state verifier`
+`Observation -> adapter proposal -> policy -> normalized parameters -> controller -> environment -> state verifier`
 
 - `core/agent.py`: bounded episode, action history, error stops, per-episode token delta. Adapter completion without a verifier is `unverified_done`, never verified success.
 - `core/controller.py`: dispatch and execution trace; uses policy-returned parameters, preserving sanitization decisions.
@@ -64,3 +64,20 @@ See [technical review](reports/TECHNICAL_REVIEW.md) and [recorded acceptance res
 ## License
 
 MIT; original attribution is retained in LICENSE.
+
+## Local model evaluation
+
+The direct-tool workflow exposes dataset inspection and report export with state-dependent capabilities and independent completion checks. It has no model-selected paths, shell, network actions or real desktop control.
+
+With the same constrained executor, Qwen3-0.6B Q8_0 completed 2/6 existing development cases and official Qwen3-1.7B Q8_0 completed 5/6. All five supported requests succeeded with the larger model; the unsupported request failed because the model inspected the dataset instead of refusing. This small comparison reuses development cases and does not establish general reliability.
+
+Three actual exports agreed with independent pandas checks across 9,357 rows and 13 numeric columns. The source checksum remained unchanged. No paid inference API was used. 69 local regression tests passed.
+
+- [Larger model results, limitations and reproduction](reports/STRONGER_MODEL.md)
+- [Raw larger-model responses and traces](reports/direct-live-1.7b.json)
+- [Numeric comparison and output hashes](reports/stronger-model-comparison.json)
+- [Lifecycle changes and earlier 2/6 result](reports/LIFECYCLE_EVALUATION.md)
+- [Earlier direct-tool failures](reports/DIRECT_TOOLS.md)
+- [Initial model-connection experiment](reports/LOCAL_MODEL_EXPERIMENT.md)
+
+The historical reports describe the state at each experiment. Source and recorded evidence are now included here; model weights and raw CSV remain excluded. Start a local inference server separately and follow the report's command to reproduce with a new output filename.
