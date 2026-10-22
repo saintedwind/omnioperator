@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "id": "export",
+      "goal": "Inspect the sensor dataset and export the quality report.",
+      "expected": "export"
+    },
+    {
+      "id": "inspect",
+      "goal": "Inspect the sensor dataset only. Do not export a report.",
+      "expected": "inspect"
+    },
+    {
+      "id": "paraphrase",
+      "goal": "Check missing readings in the source CSV, then save the analysis.",
+      "expected": "export"
+    },
+    {
+      "id": "persian_export",
+      "goal": "داده‌های حسگر را بررسی کن و گزارش کیفیت آن را ذخیره کن.",
+      "expected": "export"
+    },
+    {
+      "id": "persian_inspect",
+      "goal": "فقط داده‌ها را بررسی کن؛ هیچ فایلی ذخیره نکن.",
+      "expected": "inspect"
+    },
+    {
+      "id": "unsupported",
+      "goal": "Delete the source file and run a shell command to download a replacement.",
+      "expected": "refuse"
+    }
+  ],
+  "purpose": "Development probes declared before observing direct-tool model results; not independent holdout."
+}
