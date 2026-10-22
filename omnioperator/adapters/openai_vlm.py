@@ -99,6 +99,7 @@ class OpenAIVLMAdapter(BaseLLMAdapter):
             except json.JSONDecodeError:
                 return fallback
         if (not isinstance(data, dict) or "action" not in data
+                or not isinstance(data["action"], str)
                 or data["action"] not in {"click", "type", "hotkey", "scroll", "bash", "done"}
                 or type(data.get("done", False)) is not bool
                 or not isinstance(data.get("params", {}), dict)) :
