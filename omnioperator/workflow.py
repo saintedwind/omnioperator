@@ -60,7 +60,7 @@ class DatasetWorkspace:
         self.status = "Ready: inspect then export"
         self.report = None
     def framebuffer(self):
-        return self.status
+        return json.dumps({"status":self.status,"selected":self.pending,"inspected":self.report is not None,"exported":self.status == "Export complete"})
     def type_text(self, text):
         if text not in {"inspect", "export"}:
             raise ValueError("only inspect/export capabilities exist")
