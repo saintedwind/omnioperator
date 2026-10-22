@@ -1,0 +1,88 @@
+{
+  "source_sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
+  "rows": 9357,
+  "blank_rows_skipped": 114,
+  "start": "2004-03-10T18:00:00",
+  "end": "2005-04-04T14:00:00",
+  "duplicate_timestamps": 0,
+  "columns": {
+    "CO(GT)": {
+      "valid": 7674,
+      "missing": 1683,
+      "missing_percent": 17.9865,
+      "mean": 2.15275
+    },
+    "PT08.S1(CO)": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 1099.833166
+    },
+    "NMHC(GT)": {
+      "valid": 914,
+      "missing": 8443,
+      "missing_percent": 90.2319,
+      "mean": 218.811816
+    },
+    "C6H6(GT)": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 10.083105
+    },
+    "PT08.S2(NMHC)": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 939.153376
+    },
+    "NOx(GT)": {
+      "valid": 7718,
+      "missing": 1639,
+      "missing_percent": 17.5163,
+      "mean": 246.896735
+    },
+    "PT08.S3(NOx)": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 835.493605
+    },
+    "NO2(GT)": {
+      "valid": 7715,
+      "missing": 1642,
+      "missing_percent": 17.5484,
+      "mean": 113.091251
+    },
+    "PT08.S4(NO2)": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 1456.264598
+    },
+    "PT08.S5(O3)": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 1022.906128
+    },
+    "T": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 18.317829
+    },
+    "RH": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 49.234201
+    },
+    "AH": {
+      "valid": 8991,
+      "missing": 366,
+      "missing_percent": 3.9115,
+      "mean": 1.02553
+    }
+  }
+}
