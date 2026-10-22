@@ -1,0 +1,42 @@
+{
+  "scope": "Same six reused development cases; single run per model; no holdout",
+  "baseline_passed": 2,
+  "larger_passed": 5,
+  "total": 6,
+  "artifacts_checked": [
+    {
+      "file": "reports/direct-runs/export-1792675438710839300.json",
+      "sha256": "fc8cec745930c4a62c06535096b4f46a8e05deb2b925b4f8632c9bc545fcb326",
+      "rows": 9357,
+      "columns_checked": 13
+    },
+    {
+      "file": "reports/direct-runs/paraphrase-1792675456805227100.json",
+      "sha256": "fc8cec745930c4a62c06535096b4f46a8e05deb2b925b4f8632c9bc545fcb326",
+      "rows": 9357,
+      "columns_checked": 13
+    },
+    {
+      "file": "reports/direct-runs/persian_export-1792675466007932600.json",
+      "sha256": "fc8cec745930c4a62c06535096b4f46a8e05deb2b925b4f8632c9bc545fcb326",
+      "rows": 9357,
+      "columns_checked": 13
+    }
+  ],
+  "independent_oracle": "pandas 3.0.6",
+  "source_unchanged": true,
+  "model_manifest": {
+    "model": "Qwen/Qwen3-1.7B-GGUF",
+    "revision": "90862c4b9d2787eaed51d12237eafdfe7c5f6077",
+    "file": "Qwen3-1.7B-Q8_0.gguf",
+    "bytes": 1834426016,
+    "sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+    "runtime": "llama.cpp b11476"
+  },
+  "baseline_calls": 19,
+  "larger_calls": 17,
+  "baseline_tokens": 5306,
+  "larger_tokens": 4434,
+  "baseline_latency_ms": 25597.93,
+  "larger_latency_ms": 53121.48
+}

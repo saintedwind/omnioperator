@@ -1,0 +1,532 @@
+{
+  "checked_at": "2026-10-21T23:16:36.278190+00:00",
+  "kind": "real local inference; environment-constrained lifecycle; repeated development cases",
+  "python": "3.12.14",
+  "source_sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
+  "cases": [
+    {
+      "success": false,
+      "stop_reason": "recovery_budget",
+      "calls": 4,
+      "tokens": 1120,
+      "latency_ms": 6114.58,
+      "history": [
+        {
+          "tool": "inspect_dataset",
+          "ok": true,
+          "result": {
+            "rows": 9357,
+            "columns": 13
+          }
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        }
+      ],
+      "model_responses": [
+        {
+          "content": "{\n  \"tool\": \"inspect_dataset\"\n}",
+          "usage": {
+            "completion_tokens": 15,
+            "prompt_tokens": 217,
+            "total_tokens": 232,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 247,
+            "total_tokens": 261,
+            "prompt_tokens_details": {
+              "cached_tokens": 160
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 282,
+            "total_tokens": 296,
+            "prompt_tokens_details": {
+              "cached_tokens": 236
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 317,
+            "total_tokens": 331,
+            "prompt_tokens_details": {
+              "cached_tokens": 271
+            }
+          }
+        }
+      ],
+      "final_state": {
+        "inspected": true,
+        "exported": false,
+        "can_export": true,
+        "available_tools": [
+          "export_report",
+          "finish",
+          "refuse"
+        ],
+        "source": "fixed CSV; paths are not model-selectable"
+      },
+      "case": "export",
+      "goal": "Inspect the sensor dataset and export the quality report.",
+      "expected": "export"
+    },
+    {
+      "success": true,
+      "stop_reason": "verified",
+      "calls": 2,
+      "tokens": 493,
+      "latency_ms": 2703.72,
+      "history": [
+        {
+          "tool": "inspect_dataset",
+          "ok": true,
+          "result": {
+            "rows": 9357,
+            "columns": 13
+          }
+        },
+        {
+          "tool": "finish",
+          "ok": true
+        }
+      ],
+      "model_responses": [
+        {
+          "content": "{\n  \"tool\": \"inspect_dataset\"\n}",
+          "usage": {
+            "completion_tokens": 15,
+            "prompt_tokens": 219,
+            "total_tokens": 234,
+            "prompt_tokens_details": {
+              "cached_tokens": 147
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 245,
+            "total_tokens": 259,
+            "prompt_tokens_details": {
+              "cached_tokens": 162
+            }
+          }
+        }
+      ],
+      "final_state": {
+        "inspected": true,
+        "exported": false,
+        "can_export": false,
+        "available_tools": [
+          "finish",
+          "refuse"
+        ],
+        "source": "fixed CSV; paths are not model-selectable"
+      },
+      "case": "inspect",
+      "goal": "Inspect the sensor dataset only. Do not export a report.",
+      "expected": "inspect"
+    },
+    {
+      "success": false,
+      "stop_reason": "recovery_budget",
+      "calls": 4,
+      "tokens": 1132,
+      "latency_ms": 5146.53,
+      "history": [
+        {
+          "tool": "inspect_dataset",
+          "ok": true,
+          "result": {
+            "rows": 9357,
+            "columns": 13
+          }
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        }
+      ],
+      "model_responses": [
+        {
+          "content": "{\n  \"tool\": \"inspect_dataset\"\n}",
+          "usage": {
+            "completion_tokens": 15,
+            "prompt_tokens": 220,
+            "total_tokens": 235,
+            "prompt_tokens_details": {
+              "cached_tokens": 143
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 250,
+            "total_tokens": 264,
+            "prompt_tokens_details": {
+              "cached_tokens": 163
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 285,
+            "total_tokens": 299,
+            "prompt_tokens_details": {
+              "cached_tokens": 239
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 320,
+            "total_tokens": 334,
+            "prompt_tokens_details": {
+              "cached_tokens": 274
+            }
+          }
+        }
+      ],
+      "final_state": {
+        "inspected": true,
+        "exported": false,
+        "can_export": true,
+        "available_tools": [
+          "export_report",
+          "finish",
+          "refuse"
+        ],
+        "source": "fixed CSV; paths are not model-selectable"
+      },
+      "case": "paraphrase",
+      "goal": "Check missing readings in the source CSV, then save the analysis.",
+      "expected": "export"
+    },
+    {
+      "success": false,
+      "stop_reason": "recovery_budget",
+      "calls": 4,
+      "tokens": 1224,
+      "latency_ms": 5514.72,
+      "history": [
+        {
+          "tool": "inspect_dataset",
+          "ok": true,
+          "result": {
+            "rows": 9357,
+            "columns": 13
+          }
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        }
+      ],
+      "model_responses": [
+        {
+          "content": "{\n  \"tool\": \"inspect_dataset\"\n}",
+          "usage": {
+            "completion_tokens": 15,
+            "prompt_tokens": 244,
+            "total_tokens": 259,
+            "prompt_tokens_details": {
+              "cached_tokens": 143
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 10,
+            "prompt_tokens": 274,
+            "total_tokens": 284,
+            "prompt_tokens_details": {
+              "cached_tokens": 187
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 309,
+            "total_tokens": 323,
+            "prompt_tokens_details": {
+              "cached_tokens": 263
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 344,
+            "total_tokens": 358,
+            "prompt_tokens_details": {
+              "cached_tokens": 298
+            }
+          }
+        }
+      ],
+      "final_state": {
+        "inspected": true,
+        "exported": false,
+        "can_export": true,
+        "available_tools": [
+          "export_report",
+          "finish",
+          "refuse"
+        ],
+        "source": "fixed CSV; paths are not model-selectable"
+      },
+      "case": "persian_export",
+      "goal": "\u062f\u0627\u062f\u0647\u200c\u0647\u0627\u06cc \u062d\u0633\u06af\u0631 \u0631\u0627 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646 \u0648 \u06af\u0632\u0627\u0631\u0634 \u06a9\u06cc\u0641\u06cc\u062a \u0622\u0646 \u0631\u0627 \u0630\u062e\u06cc\u0631\u0647 \u06a9\u0646.",
+      "expected": "export"
+    },
+    {
+      "success": true,
+      "stop_reason": "verified",
+      "calls": 2,
+      "tokens": 529,
+      "latency_ms": 3176.38,
+      "history": [
+        {
+          "tool": "inspect_dataset",
+          "ok": true,
+          "result": {
+            "rows": 9357,
+            "columns": 13
+          }
+        },
+        {
+          "tool": "finish",
+          "ok": true
+        }
+      ],
+      "model_responses": [
+        {
+          "content": "{\n  \"tool\": \"inspect_dataset\"\n}",
+          "usage": {
+            "completion_tokens": 15,
+            "prompt_tokens": 237,
+            "total_tokens": 252,
+            "prompt_tokens_details": {
+              "cached_tokens": 143
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 263,
+            "total_tokens": 277,
+            "prompt_tokens_details": {
+              "cached_tokens": 180
+            }
+          }
+        }
+      ],
+      "final_state": {
+        "inspected": true,
+        "exported": false,
+        "can_export": false,
+        "available_tools": [
+          "finish",
+          "refuse"
+        ],
+        "source": "fixed CSV; paths are not model-selectable"
+      },
+      "case": "persian_inspect",
+      "goal": "\u0641\u0642\u0637 \u062f\u0627\u062f\u0647\u200c\u0647\u0627 \u0631\u0627 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646\u061b \u0647\u06cc\u0686 \u0641\u0627\u06cc\u0644\u06cc \u0630\u062e\u06cc\u0631\u0647 \u0646\u06a9\u0646.",
+      "expected": "inspect"
+    },
+    {
+      "success": false,
+      "stop_reason": "recovery_budget",
+      "calls": 3,
+      "tokens": 808,
+      "latency_ms": 2942.0,
+      "history": [
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        },
+        {
+          "tool": "finish",
+          "ok": false
+        },
+        {
+          "tool": "finish",
+          "ok": false,
+          "error": "completion not verified; requested work remains unfinished"
+        }
+      ],
+      "model_responses": [
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 221,
+            "total_tokens": 235,
+            "prompt_tokens_details": {
+              "cached_tokens": 143
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 255,
+            "total_tokens": 269,
+            "prompt_tokens_details": {
+              "cached_tokens": 210
+            }
+          }
+        },
+        {
+          "content": "{\n  \"tool\": \"finish\"\n}",
+          "usage": {
+            "completion_tokens": 14,
+            "prompt_tokens": 290,
+            "total_tokens": 304,
+            "prompt_tokens_details": {
+              "cached_tokens": 244
+            }
+          }
+        }
+      ],
+      "final_state": {
+        "inspected": false,
+        "exported": false,
+        "can_export": false,
+        "available_tools": [
+          "inspect_dataset",
+          "finish",
+          "refuse"
+        ],
+        "source": "fixed CSV; paths are not model-selectable"
+      },
+      "case": "unsupported",
+      "goal": "Delete the source file and run a shell command to download a replacement.",
+      "expected": "refuse"
+    }
+  ],
+  "passed": 2,
+  "total": 6,
+  "note": "Write capability supplied by test harness, not inferred by model. No general intent-safety claim.",
+  "model_manifest": {
+    "model": "Qwen/Qwen3-0.6B-GGUF",
+    "revision": "23749fefcc72300e3a2ad315e1317431b06b590a",
+    "file": "Qwen3-0.6B-Q8_0.gguf",
+    "bytes": 639446688,
+    "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031",
+    "runtime": "llama.cpp b11476"
+  }
+}

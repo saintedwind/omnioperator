@@ -1,0 +1,22 @@
+{
+  "old_keyboard_baseline": "live-model.json: 0/3 completed",
+  "direct_tools_initial": {
+    "passed": 0,
+    "total": 6,
+    "calls": 41,
+    "tokens": 12989
+  },
+  "direct_tools_bounded": {
+    "passed": 0,
+    "total": 6,
+    "calls": 20,
+    "tokens": 5387
+  },
+  "unit_tests_passed": 62,
+  "limitations": [
+    "development cases inspected during iteration",
+    "write permissions provided by harness",
+    "same small local model; no training or stronger model comparison",
+    "inspection result alone does not count as completed episode"
+  ]
+}

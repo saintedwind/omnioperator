@@ -1,0 +1,15 @@
+{
+  "scope": "Repeated six development probes; no independent holdout; same local model and real source",
+  "old_passed": 0,
+  "new_passed": 2,
+  "total": 6,
+  "old_calls": 20,
+  "new_calls": 19,
+  "old_tokens": 5387,
+  "new_tokens": 5306,
+  "source_sha256": "13277ae5d8581e80b7be09d47c7d3d06fe9b8e957078f2cf6e859f955e62f996",
+  "implementation_sha256": {
+    "omnioperator/direct_tools.py": "d0966c924272a7eaf796f242ea67d4843ce8074b94d0e9df07b69a6f301fc8bb",
+    "scripts/direct_live.py": "58f76144f552a50265e5cfb0d0b61324139245035f42991ca64c7c6e232686c6"
+  }
+}
