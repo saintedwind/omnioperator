@@ -81,3 +81,7 @@ Three actual exports agreed with independent pandas checks across 9,357 rows and
 - [Initial model-connection experiment](reports/LOCAL_MODEL_EXPERIMENT.md)
 
 The historical reports describe the state at each experiment. Source and recorded evidence are now included here; model weights and raw CSV remain excluded. Start a local inference server separately and follow the report's command to reproduce with a new output filename.
+
+## Publication audit — 2026-11-01
+
+See [source/evidence review and retained limitations](reports/PUBLICATION_2026-11-01.md). Historical experiments retain their original dates; the publication check does not establish new model accuracy or deployment evidence.
