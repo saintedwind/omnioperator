@@ -70,10 +70,13 @@ class Guardrails:
     # ------------------------------------------------------------------
     def check(self, action: str, params: Dict[str, Any],
               confirmed: bool = False) -> GuardrailDecision:
-        """Evaluate one proposed action and return the decision."""
+        """Evaluate an action; confirmation must be a boolean, never a truthy value."""
         if not isinstance(params, dict):
             return GuardrailDecision("BLOCKED", "params must be an object", False)
-        decision = self._evaluate(action, params, confirmed)
+        if type(confirmed) is not bool:
+            decision = GuardrailDecision("BLOCKED", "confirmed must be a boolean", False)
+        else:
+            decision = self._evaluate(action, params, confirmed)
         if decision.allowed and action in self.require_confirmation_for and not confirmed:
             decision = GuardrailDecision("CONFIRM", "action requires operator approval", False)
         self.audit_log.append({
